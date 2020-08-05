@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"2850086000400171748",
+		"product_id":"736430079244589394",
+		"client_id":"421550450106434624",
+		"client_secret":"3E61F3067DD4A8959C4E9AD4FD7B15B6E9F2C4042A645C32ED9BAA5338E0EAAF",
+		"app_id":"102677579",
+		"package_name":"com.wangxiaobao.market.market_cloud",
+		"api_key":"CgB6e3x9eyOU9APAiz0mirP1T0/FegUeHjn1dLW3eHh55ljFXP35FVoNe676BTuppi9uKG42gyXfvJo+Ay0dBl7K"
+	},
+	"configuration_version":"1.0"
+}

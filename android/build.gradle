@@ -5,10 +5,14 @@ buildscript {
     repositories {
         google()
         jcenter()
+        //华为推送配置
+        maven {url 'http://developer.huawei.com/repo/'}
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.0'
+        //华为推送配置
+        classpath 'com.huawei.agconnect:agcp:1.2.1.301'
     }
 }
 
@@ -16,11 +20,14 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        //华为推送配置
+        maven {url 'http://developer.huawei.com/repo/'}
     }
 }
 
 apply plugin: 'com.android.library'
-
+//华为推送配置
+apply plugin: 'com.huawei.agconnect'
 android {
     compileSdkVersion 28
 
@@ -34,9 +41,14 @@ android {
 }
 
 dependencies {
-    implementation 'cn.jiguang.sdk:jpush:3.3.4'
-    implementation 'cn.jiguang.sdk:jcore:2.1.2'
+    implementation 'cn.jiguang.sdk:jpush:3.6.0'
+    implementation 'cn.jiguang.sdk:jcore:2.3.4'
     implementation 'androidx.appcompat:appcompat:1.0.0'
     compileOnly files('libs/flutter.jar')
+
+    //极光-华为推送通道插件(厂商版本和jpush SDK版本保持一致)
+    implementation 'cn.jiguang.sdk.plugin:huawei:3.6.0'
+    //华为推送配置
+    implementation 'com.huawei.hms:push:4.0.2.300'
 
 }
